@@ -11,13 +11,15 @@
 <div class="py-5 mt-3 container">
     <div class="row">
         <div class="col-md-3 mb-4 mb-md-0 col">
-            <div class="card product-card shadow rounded-3 h-100" >
+           <a href="{{route("product-detail",["slug" => "asd"])}}" class="text-decoration-none text-dark">
+            <div class="card product-card shadow rounded-3 h-100 card-hover" >
                 <img src="{{asset('images/products/Banana  Basket Combination 1set of 3. Cover Pot Banana.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h6 class="card-title">Banana Basket Combination 1 set of 3 </h6>
                   <p class="card-text">CODE: BL001</p>
                 </div>
             </div>
+           </a>
         </div>
         <div class="col-md-3 mb-4 mb-md-0 col">
             <div class="card product-card shadow rounded-2 h-100" >

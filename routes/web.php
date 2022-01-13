@@ -19,7 +19,7 @@ Route::get('/', function () {
 })->name("home");
 
 Route::get("/products", [ProductController::class, "index"])->name("products-page");
-Route::get("/products/{slug}", [ProductController::class, "productDetail"])->name("products-detail");
+Route::get("/products/{slug}", [ProductController::class, "productDetail"])->name("product-detail");
 
 
 Route::get('/dashboard', function () {

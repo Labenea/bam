@@ -18,13 +18,13 @@
             <a class="  fw-bold    nav-link  @if(Route::is('products-page'))active @endif" href="{{Route("products-page")}}">PRODUCT</a>
           </li>
           <li class="nav-item">
-            <a class=" fw-bold nav-link  @if(Route::is('home'))active @endif" href="#eventSection">GALLERY</a>
+            <a class=" fw-bold nav-link   href="#eventSection">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class=" fw-bold nav-link  @if(Route::is('home'))active @endif" href="#articleSection">ABOUT US</a>
+            <a class=" fw-bold nav-link   href="#articleSection">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="  fw-bold nav-link  @if(Route::is('home'))active @endif" href="#articleSection">CONTACT US</a>
+            <a class="  fw-bold nav-link   href="#articleSection">CONTACT US</a>
           </li>
           {{-- <li class="nav-item">
             <a class="red-hover nav-link " href="#">KALKULATOR FINANSIAL</a>
