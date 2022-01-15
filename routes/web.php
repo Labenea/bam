@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,13 +20,15 @@ Route::get('/', function () {
 })->name("home");
 
 
-Route::get("/products", [ProductController::class, "index"])->name("products-page");
+Route::get("/products/categories", [ProductController::class, "index"])->name("product-categories");
 Route::get("/products/{slug}", [ProductController::class, "productDetail"])->name("product-detail");
 
 
 Route::get("/about-us", function () {
     return view('main.pages.about-us');
 })->name('about-us');
+
+Route::get("/contact-us", [ContactController::class, 'index'])->name('contact-us');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
