@@ -1,7 +1,12 @@
 @extends('main.layout.app')
 
 @section('content')
-<img src="{{ asset('images/cover/cover.jpg') }}" alt="" class="w-100 cover-image">
+<picture>
+    <source media="(max-width: 599px)" srcset="{{ asset('images/cover/cover-s.jpg') }}">
+    <source media="(min-width: 600px)" srcset="{{ asset('images/cover/cover-2.jpg') }}">
+        <img src="{{ asset('images/cover/cover-2.jpg') }}" alt="" class="w-100 cover-image">
+  </picture>
+
 <div class="w-100 position-absolute top-0 cover-screen "></div>
 
 <div class=" w-100 position-absolute top-0 d-flex flex-column align-items-center justify-content-center cover-heading" >

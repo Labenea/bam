@@ -18,9 +18,14 @@ Route::get('/', function () {
     return view('main.pages.home');
 })->name("home");
 
+
 Route::get("/products", [ProductController::class, "index"])->name("products-page");
 Route::get("/products/{slug}", [ProductController::class, "productDetail"])->name("product-detail");
 
+
+Route::get("/about-us", function () {
+    return view('main.pages.about-us');
+})->name('about-us');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

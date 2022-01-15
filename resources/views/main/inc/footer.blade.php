@@ -9,7 +9,7 @@
                 <p class="mt-0 mb-0 text-white">EMAIL: bawera.arthamakmur21@gmail.com</p>
             </div>
             <div class="col-md-auto col-6 mb-3 mb-md-0">
-                <h6 class="text-white-50 mb-3 ">  
+                <h6 class="text-white-50 mb-3 ">
                     FEATURES
                 </h6>
                 <a class="text-decoration-none mb-1 text-white d-block" href="">Home</a>
@@ -19,18 +19,19 @@
                 <a class="text-decoration-none mb-1 text-white d-block" href="">Contact Us</a>
             </div>
             <div class="col-md-auto col-6 mb-3 mb-md-0">
-                <h6 class="text-white-50 mb-3 ">  
+                <h6 class="text-white-50 mb-3 ">
                     About Us
                 </h6>
-                <a class="text-decoration-none mb-1 text-white d-block" href="">Our Stroy</a>
+                <a class="text-decoration-none mb-1 text-white d-block" href="{{route("about-us")}}#ourStory">Our Stroy</a>
+                <a class="text-decoration-none mb-1 text-white d-block" href="{{route("about-us")}}#ourStory">Office</a>
                 <a class="text-decoration-none mb-1 text-white d-block" href="">Why Choose Us</a>
-                <a class="text-decoration-none mb-1 text-white d-block" href="">Office</a>
+
                 <a class="text-decoration-none mb-1 text-white d-block" href="">Our Team</a>
-               
+
             </div>
-            
+
             <div class="col-md-3 mb-3 mb-md-0">
-                <img src="{{ asset('images/icon/logo_no_text.png') }}"class="img-fluid" alt="">
+                <img src="{{ asset('images/icon/logo_no_text.png') }}" class="img-fluid" alt="">
             </div>
         </div>
     </div>

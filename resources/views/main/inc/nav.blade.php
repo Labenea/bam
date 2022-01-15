@@ -21,7 +21,7 @@
             <a class=" fw-bold nav-link   href="#eventSection">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class=" fw-bold nav-link   href="#articleSection">ABOUT US</a>
+            <a class=" fw-bold nav-link @if(Route::is('about-us'))active @endif"   href="{{route('about-us')}}">ABOUT US</a>
           </li>
           <li class="nav-item">
             <a class="  fw-bold nav-link   href="#articleSection">CONTACT US</a>
