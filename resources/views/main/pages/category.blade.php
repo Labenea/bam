@@ -12,7 +12,7 @@
     <div class="container py-5">
         <div class="row">
             @foreach($data as $key => $value)
-            <div class="col-4">
+            <div class="col-4 mb-3">
                 <a href="{{route("product-list",["slug" => strtolower($value->category)])}}" class="text-decoration-none text-dark">
                     <div class="card category-card shadow rounded-3 h-100 card-hover">
                         <img src="{{asset(Storage::url($value->cat_img))}}" class="card-img-top" alt="...">
