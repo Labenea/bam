@@ -6,4 +6,6 @@ User details: <br><br>
 
 Name: {{$details["firstname"]}} {{$details["lastname"]}} <br>
 Email: {{ $details["email"] }} <br>
-Message: {{ $details["body"] }} <br><br>
+Message: 
+<br><br>
+{{ $details["body"] }} <br><br>
