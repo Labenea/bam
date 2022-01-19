@@ -15,7 +15,7 @@ mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'pub
     require('postcss-import'),
     require('tailwindcss'),
     require('autoprefixer'),
-]).sass("resources/sass/app.scss","public/css/bootstrap.css");
+]).sass("resources/sass/app.scss","public/css/bootstrap.css").sass("resources/sass/admin.scss","public/css/admin.css");
 if (mix.inProduction()) {
     mix.version();
 }

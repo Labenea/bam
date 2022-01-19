@@ -15,9 +15,7 @@
                 <li class="nav-item">
                     <a class="  fw-bold    nav-link  @if(Route::is('product-categories'))active @endif" href="{{Route("product-categories")}}">PRODUCT</a>
                 </li>
-                <li class="nav-item">
-                    <a class=" fw-bold nav-link " href=""" #eventSection">GALLERY</a>
-                </li>
+
                 <li class="nav-item">
                     <a class=" fw-bold nav-link @if(Route::is('about-us'))active @endif" href="{{route('about-us')}}">ABOUT US</a>
                 </li>

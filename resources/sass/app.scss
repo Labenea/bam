@@ -39,6 +39,14 @@ nav {
   color: $red;
 }
 
+.obj-cover {
+  object-fit: cover;
+}
+
+.vh-75 {
+  height: 75vh;
+}
+
 .whatsApp {
   position: fixed;
   width: 60px;
@@ -190,4 +198,12 @@ nav {
 .about-us-info {
   width: 200px;
   height: 200px;
+}
+
+.category-card {
+  border: none;
+  img {
+    max-height: 230px;
+    object-fit: cover;
+  }
 }

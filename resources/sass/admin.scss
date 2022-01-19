@@ -1,0 +1,74 @@
+@import "./variables";
+@import "./mixins";
+@import "~bootstrap/scss/bootstrap";
+.navbar .navbar-toggler {
+  top: 0.25rem;
+  right: 1rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgb(0 0 0 / 10%);
+
+  a {
+    color: white;
+    &:hover {
+      color: red;
+    }
+  }
+  li {
+    &.active {
+      background: lighten($color: $blue-700, $amount: 20);
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.blue-500 {
+  color: $blue-500 !important;
+}
+
+.blue-600 {
+  color: $blue-600 !important;
+}
+
+.blue-700 {
+  color: $blue-700 !important;
+}
+
+.bg-blue-700 {
+  background-color: $blue-700 !important;
+}
+
+.bg-blue-600 {
+  background-color: $blue-600 !important;
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+.z-index-1000 {
+  z-index: 10000;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 3rem;
+  }
+}
+
+.ck-editor__editable {
+  min-height: 200px;
+}
+
+.obj-cover {
+  object-fit: cover;
+}

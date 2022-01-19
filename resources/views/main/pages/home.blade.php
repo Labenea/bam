@@ -19,41 +19,27 @@
     <h6 class="text-center fw-bold text-secondary">OUR TOP</h6>
     <h2 class="text-center fw-bold blue-700">PRODUCT</h2>
     <div class="row my-3">
+        @foreach($prod as $key => $value)
         <div class="col-md-6 col-12">
             <a href="" class="text-decoration-none text-dark">
                 <div class="card mb-3 shadow card-hover">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{ asset('images/products/Walldecor seagrass with macrame (large size).jpg') }}" class="horizontal-card rounded-start" alt="...">
+                            <img src="{{asset(Storage::url($value->image))}}" class="horizontal-card rounded-start" alt="...">
                         </div>
                         <div class="col-md-8 ">
                             <div class="card-body ">
-                                <h5 class="card-title">Walldecor seagrass with macrame (large size)</h5>
-                                <p class="card-text mb-0"><span style="fw-bold">Code :</span> SG006</p>
+                                <h5 class="card-title">{{$value->name}}</h5>
+                                <p class="card-text mb-0"><span style="fw-bold">Code :</span> {{$value->code}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-md-6 col-12">
-            <a href="" class="text-decoration-none text-dark">
-                <div class="card mb-3 shadow card-hover">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{{ asset('images/products/Water Hyacinth Laundry Basket With Lid.jpeg') }}" class="horizontal-card  rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8 ">
-                            <div class="card-body ">
-                                <h5 class="card-title">Water Hyacinth Laundry Basket With Lid.</h5>
-                                <p class="card-text mb-0"><span style="fw-bold">Code :</span> SG006</p>
+        @endforeach
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+
 
     </div>
     <div class="row justify-content-center">

@@ -14,9 +14,9 @@
                 </h6>
                 <a class="text-decoration-none mb-1 text-white d-block" href="">Home</a>
                 <a class="text-decoration-none mb-1 text-white d-block" href="{{route("product-categories")}}">Product</a>
-                <a class="text-decoration-none mb-1 text-white d-block" href="">Gallery</a>
-                <a class="text-decoration-none mb-1 text-white d-block" href="{{route('contact-us')}}">About Us</a>
-                <a class="text-decoration-none mb-1 text-white d-block" href="">Contact Us</a>
+                <a class="text-decoration-none mb-1 text-white d-block" href="{{route('gallery')}}">Gallery</a>
+                <a class="text-decoration-none mb-1 text-white d-block" href="{{route('about-us')}}">About Us</a>
+                <a class="text-decoration-none mb-1 text-white d-block" href="{{route('contact-us')}}">Contact Us</a>
             </div>
             <div class="col-md-auto col-6 mb-3 mb-md-0">
                 <h6 class="text-white-50 mb-3 ">
@@ -24,9 +24,9 @@
                 </h6>
                 <a class="text-decoration-none mb-1 text-white d-block" href="{{route("about-us")}}#ourStory">Our Story</a>
                 <a class="text-decoration-none mb-1 text-white d-block" href="{{route("about-us")}}#ourStory">Office</a>
-                <a class="text-decoration-none mb-1 text-white d-block" href="">Why Choose Us</a>
+                <a class="text-decoration-none mb-1 text-white d-block" href="{{route("about-us")}}#ourValue">Why Choose Us</a>
 
-                <a class="text-decoration-none mb-1 text-white d-block" href="">Our Team</a>
+                <a class="text-decoration-none mb-1 text-white d-block" href="{{route("about-us")}}#ourStory">Our Team</a>
 
             </div>
 
