@@ -12,7 +12,7 @@
 <div class=" w-100 position-absolute top-0 d-flex flex-column align-items-center justify-content-center cover-heading">
     <img src="{{ asset('images/icon/logo_no_text.png') }}" class="z-index-3 cover-logo" alt="">
     <h1 data-aos="zoom-in" class="text-white  w-75">YOUR BEST EXPORT IMPORT PARTNER</h1>
-    <a href="#" class="btn btn-primary">Learn More About Us</a>
+    <a href="{{route("about-us")}}" class="btn btn-primary">Learn More About Us</a>
 </div>
 
 <div class="my-5 container">
