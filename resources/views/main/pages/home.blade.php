@@ -21,7 +21,7 @@
     <div class="row my-3">
         @foreach($prod as $key => $value)
         <div class="col-md-6 col-12">
-            <a href="" class="text-decoration-none text-dark">
+            <a href="{{route("product-detail",["slug" => $value->code ]) }}" class="text-decoration-none text-dark">
                 <div class="card mb-3 shadow card-hover">
                     <div class="row g-0">
                         <div class="col-md-4">
