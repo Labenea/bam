@@ -61,6 +61,10 @@
                         <td>{{$value->productCategory->category}}</td>
                         <td>
 
+                            <form class="d-inline" action="{{route("edit-product",$value->code)}}" method="get">
+                                @csrf
+                                <button class="btn btn-primary" type="submit">Edit</button>
+                            </form>
                             <form class="d-inline" action="{{route("delete-product",$value->id)}}" method="post">
                                 @csrf
                                 <button class="btn btn-danger" type="submit">Delete</button>

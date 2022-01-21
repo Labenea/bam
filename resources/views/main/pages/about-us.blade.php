@@ -5,25 +5,25 @@
 <section class="navbar-compen">
     <div class=" py-5 container ">
         <div class="py-5">
-            <h3 class="text-center">Learn More</h3>
-            <h1 class="text-center blue-600 fw-bold"> About Our Story</h1>
+            <h3 data-aos="zoom-in" class="text-center">Learn More</h3>
+            <h1 data-aos="zoom-in" class="text-center blue-600 fw-bold"> About Our Story</h1>
         </div>
     </div>
-    <div id="ourStory" class="py-5 bg-blue-700">
+    <div id="ourStory"  class="py-5 bg-blue-700">
         <div class="container">
             <div class=" row justify-content-center">
                 <div class="col-md-3 mb-md-0 mb-3">
-                    <h2 class="text-white text-md-start text-center ">Our Story</h2>
+                    <h2 data-aos="fade-right"  class="text-white text-md-start text-center ">Our Story</h2>
                 </div>
                 <div class="col-md-auto">
                     <div class="float-md-end d-md-block d-flex">
-                        <div class="about-us-info">
+                        <div data-aos="fade-up" data-aos-delay="100" class="about-us-info">
                             <div class="px-5">
                                 <img src="{{asset("images/icon/since.png")}}" class="img-fluid mx-auto d-block" alt="">
                             </div>
                             <h6 class="text-white mt-3 text-center">Since 2021</h6>
                         </div>
-                        <div class="about-us-info">
+                        <div data-aos="fade-up" data-aos-delay="200" class="about-us-info">
                             <div class="px-5">
                                 <img src="{{asset("images/icon/archipelago.png")}}" class="img-fluid  mx-auto d-block" alt="">
                                 <h6 class="text-white mt-3 text-center">Based in Indonesia</h6>
@@ -33,7 +33,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-6">
+                <div data-aos="fade-left" data-aos-delay="250" class="col-md-6">
                     <p class="text-white">
                         Bawera Artha Makmur Ltd was established in 2021 based on the desire to advance the Indonesian economy by facilitating craftsmen, farmers and fishermen to sell their products abroad with guaranteed quality through manufacturer standards.</p>
                     <h5 class="text-white">Our Office</h5>
@@ -59,7 +59,7 @@
         <div class=" row justify-content-center">
 
             <div class="col-md-8">
-                <div class="row justify-content-evenly ">
+                <div data-aos="fade-right" class="row justify-content-evenly ">
                     <div class="col-md-3 mb-5 mb-md-0">
                         <div class="px-4 mb-4 d-flex justify-content-center">
                             <img src="{{ asset('images/icon/medal-blue.png') }}" class="img-fluid choose-us-image " alt="">
@@ -86,7 +86,7 @@
             </div>
 
             <div class="col-md-3">
-                <h2 class="blue-700 fw-bold text-md-start text-center">Why Choose Us</h2>
+                <h2 data-aos="zoom-in" class="blue-700 fw-bold text-md-start text-center">Why Choose Us</h2>
             </div>
         </div>
     </div>

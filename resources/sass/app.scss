@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./mixins";
 @import "~bootstrap/scss/bootstrap";
+@import "~aos/dist/aos.css";
 
 nav {
   z-index: 10;

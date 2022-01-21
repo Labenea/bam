@@ -40,6 +40,9 @@ Route::get('/admin/products', [AdminController::class, 'products'])->name('admin
 Route::get('/admin/products/add', [AdminController::class, 'newProduct'])->name('add-product');
 Route::post('/admin/products/add/save', [AdminController::class, 'saveProduct'])->name('save-product');
 Route::post('/admin/products/delete/{id}', [AdminController::class, 'deleteProduct'])->name('delete-product');
+Route::post('/admin/products/update/{code}', [AdminController::class, 'saveEditProduct'])->name('save-edit-product');
+Route::get('/admin/products/{code}/edit', [AdminController::class, 'editProduct'])->name('edit-product');
+
 
 Route::get('/admin/categories', [AdminController::class, 'categories'])->name('admin-categories');
 Route::post('/admin/categories/new', [AdminController::class, 'newCategories'])->name('new-categories');

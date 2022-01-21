@@ -103,4 +103,74 @@ class AdminController extends Controller
 
         return redirect(route("admin-categories"))->with("status", "New Category has been created");
     }
+
+    public function editProduct($code)
+    {
+        $data = Product::where("code", $code)->get()->first();
+        $cat = Category::all();
+
+        return view("admin.pages.edit-product", ["data" => $data, "cat" => $cat]);
+    }
+
+    public function saveEditProduct($code, Request $request)
+    {
+
+        if ($code != $request->post("productCode")) {
+            $size = Product::where("code", $request->post("productCode"))->count();
+            if ($size > 0) {
+                return redirect(route("edit-product", $code))->with("status", ["Product Code already exist", "danger"]);
+            }
+        }
+
+        if ($request->post("imageForm") == null) {
+            $validatedData = $request->validate([
+                'title' => 'required',
+                'productCode' => 'required',
+                'category' => 'required',
+                'specification' => 'required',
+            ]);
+
+            if ($validatedData) {
+                $data = array(
+                    "specification" => $request->post("specification"),
+                    "code" => $request->post("productCode"),
+                    "name" => $request->post("title"),
+                    "category_id" => $request->post("category"),
+                );
+                $product =  Product::where("code", $code)->get()->first();
+                $product->update($data);
+                return redirect(route("admin-products"))->with("status", ["Product has been updated", "success"]);
+            } else {
+                return redirect(route("add-product"))->with("status", ["Failed please try again", "danger"]);
+            }
+        } else {
+            $validatedData = $request->validate([
+                'imageForm' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+                'title' => 'required',
+                'productCode' => 'required',
+                'category' => 'required',
+                'specification' => 'required',
+            ]);
+
+            if ($validatedData) {
+                $file = $request->file('imageForm')->getClientOriginalName();
+                $filename = pathinfo($file, PATHINFO_FILENAME);
+                $extension = pathinfo($file, PATHINFO_EXTENSION);
+                $fullname = $filename . time() . '.' . $extension;
+                $path = $request->file('imageForm')->storeAs('public/images', $fullname);
+                $data = array(
+                    "image" => $path,
+                    "specification" => $request->post("specification"),
+                    "code" => $request->post("productCode"),
+                    "name" => $request->post("title"),
+                    "category_id" => $request->post("category"),
+                );
+                $product =  Product::where("code", $code)->get()->first();
+                $product->update($data);
+                return redirect(route("admin-products"))->with("status", ["Product has been updated", "success"]);
+            } else {
+                return redirect(route("add-product"))->with("status", ["Failed please try again", "danger"]);
+            }
+        }
+    }
 }
