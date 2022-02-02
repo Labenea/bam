@@ -28,7 +28,7 @@ class ProductController extends Controller
         if ($count == 0) {
             return view("main.pages.coming-soon");
         } else {
-            $data = Product::where("category_id", $categoryId->id)->get();
+            $data = Product::where("category_id", $categoryId->id)->paginate(20);
             return view("main.pages.product", ["data" => $data]);
         }
     }

@@ -21,6 +21,11 @@
 
 
         </div>
+
+        <div class="my-2">
+            {{ $data->links() }}
+        </div>
+
     </div>
 </div>
 @endsection
