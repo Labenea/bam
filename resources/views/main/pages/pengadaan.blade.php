@@ -3,7 +3,7 @@
 @section('content')
 <div id="compro" class="container py-5 navbar-compen">
     <div class="row">
-        <div class="col-6 px-3">
+        <div class="col-md-6 px-3">
 
             <h1 class="fw-bold blue-700 pt-2">Think Big to do Better</h1>
             <h4 class="fw-light pt-2">
@@ -17,7 +17,7 @@
                 <a class="btn btn-primary" href="#aboutUs">About Us</a>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 mt-3 mt-mb-0">
             <img src="{{asset("images/cover/image-015.jpg")}}" class="img-fluid" alt="">
         </div>
     </div>
@@ -27,13 +27,13 @@
         <h2 class="text-white text-center">ABOUT US</h2>
         <div class="row justify-content-end py-5">
 
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="">
                     <img src="{{asset("images/icon/map-nganjuk.png")}}" class="map-nganjuk mx-auto d-block" alt="">
                     <p class="text-white text-center">NGANJUK</p>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <p class="text-white">
                     PT. BAWERA ARTHA MAKMUR berdiri pada tanggal 14 Juni 2021 dengan alamat Perum Zahro In 2 Blok A
                     No.14 Nganjuk – Jawa Timur
@@ -69,7 +69,7 @@
 <div class="bg-white-pure">
     <div class="container py-5">
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
                 <h2 class="blue-700">Misi Perusahaan</h2>
                 <br>
                 <ul>
@@ -81,7 +81,7 @@
                     <li>Mengelola SDM yang unggul, jujur, dan berkomitmen sehingga dapat memberikan pelayanan prima</li>
                 </ul>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="px-4">
                     <img src="{{asset("images/pengadaan/misi.jpeg")}}" class="img-misi d-block mx-auto" alt="">
                 </div>
@@ -127,10 +127,10 @@
     </h2>
     <br><br>
     <div class="row">
-        <div class="col-6">
+        <div class="col-md-6">
             <img src="{{asset("images/pengadaan/room.jpeg")}}" class="img-misi d-block mx-auto"" alt="">
         </div>
-        <div class=" col-6">
+        <div class=" col-md-6">
             <br>
             <h3 class="blue-700">
                 Medical devices unit
