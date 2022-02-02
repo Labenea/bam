@@ -13,7 +13,13 @@
 <body>
     <a href="https://wa.me/+6281246244965?text="
         class="whatsApp" target="_blank"><i class="bi bi-whatsapp my-whatsApp"></i></a>
-    @include('main.inc.nav')
+        @if (Route::is("pengadaan"))
+        @include('main.inc.nav-pengadaan')
+
+        @else
+        @include('main.inc.nav')
+
+        @endif
     @yield('content')
     @include('main.inc.footer')
 </body>

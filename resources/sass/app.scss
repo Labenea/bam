@@ -17,6 +17,9 @@ nav {
 .blue-700 {
   color: $blue-700 !important;
 }
+.blue-800 {
+  color: $blue-800 !important;
+}
 
 .bg-blue-700 {
   background-color: $blue-700 !important;
@@ -24,6 +27,13 @@ nav {
 
 .bg-blue-600 {
   background-color: $blue-600 !important;
+}
+
+.bg-white-pure {
+  background-color: #fff;
+}
+.bg-light-gray {
+  background-color: $gray-200;
 }
 
 .z-index-3 {
@@ -207,4 +217,14 @@ nav {
     max-height: 230px;
     object-fit: cover;
   }
+}
+
+.map-nganjuk {
+  width: 200px;
+  height: auto;
+}
+
+.img-misi {
+  width: auto;
+  height: 400px;
 }

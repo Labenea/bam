@@ -3,12 +3,19 @@
         <div class="row justify-content-md-evenly justify-content-around">
             <div class="col-md-4 mb-3 mb-md-0 ">
                 <p class="mt-0 mb-0 text-white">PT. BAWERA ARTHA MAKMUR</p>
+                @if (Route::is("pengadaan"))
+                <p class="mt-3 mb-0 text-white">Perum Zahro In 2 Blok A No.14</p>
+                <p class="mt-0 mb-0 text-white">Nganjuk – Jawa Timur,Indonesia</p>
+                @else
                 <p class="mt-3 mb-0 text-white">Perumahan Villa Bukit Tidar C1-501</p>
                 <p class="mt-0 mb-0 text-white">Malang, East Java, Indonesia</p>
+                @endif
+
                 <p class="mt-2 mb-0 text-white">WA: +62 81246244965</p>
                 <p class="mt-0 mb-0 text-white">EMAIL: <a href="mailto:info@baweraarthamakmur.com" class="text-decoration-none text-white">info@baweraarthamakmur.com</a></p>
             </div>
             <div class="col-md-auto col-6 mb-3 mb-md-0">
+                @if (!Route::is("pengadaan"))
                 <h6 class="text-white-50 mb-3 ">
                     FEATURES
                 </h6>
@@ -17,8 +24,11 @@
                 <a class="text-decoration-none mb-1 text-white d-block" href="{{route('gallery')}}">Gallery</a>
                 <a class="text-decoration-none mb-1 text-white d-block" href="{{route('about-us')}}">About Us</a>
                 <a class="text-decoration-none mb-1 text-white d-block" href="{{route('contact-us')}}">Contact Us</a>
+                @endif
+
             </div>
             <div class="col-md-auto col-6 mb-3 mb-md-0">
+                @if (!Route::is("pengadaan"))
                 <h6 class="text-white-50 mb-3 ">
                     About Us
                 </h6>
@@ -27,6 +37,8 @@
                 <a class="text-decoration-none mb-1 text-white d-block" href="{{route("about-us")}}#ourValue">Why Choose Us</a>
 
                 <a class="text-decoration-none mb-1 text-white d-block" href="{{route("about-us")}}#ourStory">Our Team</a>
+
+                @endif
 
             </div>
 

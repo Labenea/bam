@@ -30,6 +30,10 @@ Route::get("/about-us", function () {
     return view('main.pages.about-us');
 })->name('about-us');
 
+Route::get("/pengadaan", function () {
+    return view('main.pages.pengadaan');
+})->name("pengadaan");
+
 Route::get("/contact-us", [ContactController::class, 'index'])->name('contact-us');
 Route::post("/contact-us/send", [ContactController::class, 'sendMessage'])->name('send-message');
 
