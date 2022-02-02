@@ -22,7 +22,7 @@
 
         </div>
 
-        <div class="my-2">
+        <div class="my-2 d-flex justify-content-center">
             {{ $data->links() }}
         </div>
 
