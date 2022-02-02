@@ -6,7 +6,7 @@
     <div class="py-5 mt-3 container">
         <div class="row">
             @foreach($data as $key => $value)
-            <div data-aos="fade-up"    data-aos-delay="{{$key * 50 }}" class="col-md-3 mb-4 mb-md-0 col-12">
+            <div data-aos="fade-up" data-aos-delay="{{$key * 50 }}" class="col-md-3 mb-4 col-12">
                 <a href="{{route("product-detail",["slug" => $value->code ]) }}" class="text-decoration-none text-dark">
                     <div class="card product-card shadow rounded-3 h-100 card-hover">
                         <img src="{{asset(Storage::url($value->image))}}" class="card-img-top" alt="...">
